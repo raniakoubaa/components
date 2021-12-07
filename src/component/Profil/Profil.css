@@ -5,4 +5,20 @@
 .ProfilName{
     font: 300 28px "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(38,38,38);
+    
+}
+
+.position p{
+    margin-right: 20px;
+}
+.text-profil{
+    margin-right:50%;
+    margin-top: 60px;  
+}
+.col_picture{
+    margin-top: 20px;
+}
+.picture{
+    padding-bottom: 20px;
+    font: 400 16px, Roboto, Helvetica, Arial, sans-serif;
 }

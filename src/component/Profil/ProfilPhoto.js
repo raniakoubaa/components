@@ -1,13 +1,22 @@
 import React from 'react'
-import profil from './profile.jpg'
+import { Col, Container, Row } from 'react-bootstrap'
+
 import './Profil.css'
-const ProfilPhoto = () => {
+const ProfilPhoto = ({ children, abonne }) => {
     return (
         <div className="picture">
-            <img src={profil} alt="profile" className="rounded-circle" width="150" height="150"></img>
-          
+            <Container>
+                <Row>
+                    <Col  style={{fontSize:'16px'}}> 
+                        {children}
+                        {abonne}
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }
-
+ProfilPhoto.defaultProps = {
+    abonne: "100k abonnés"
+}
 export default ProfilPhoto
